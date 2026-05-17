@@ -1,0 +1,37 @@
+
+.exiting-toast{
+    animation: exitingAnimation 0.3s linear forwards;
+}
+
+@keyframes exitingAnimation {
+   
+    to{
+        transform: translateX(100%);
+    }
+}
+
+.animateLeft{
+    animation: leftslide 2s linear 0.2s 1;
+}
+
+@keyframes leftslide {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.animateRight{
+    animation: rightslide 0.2s linear 0s 1;
+}
+
+@keyframes rightslide {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
