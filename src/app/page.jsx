@@ -18,10 +18,14 @@ const page = () => {
     {
       name:"Virtual List",
       url:"/virtual-list"
+    },
+    {
+      name:"Stopwatch",
+      url:"/stopwatch"
     }
   ]
   return (
-    <div className='flex flex-col gap-5 px-6 py-4'>
+    <div className='flex flex-col gap-5 px-6 py-4 '>
       <div className="flex justify-between items-center">
         <div className='text-2xl font-semibold'>Machine Coding</div>
       </div>

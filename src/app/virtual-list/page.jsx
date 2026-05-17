@@ -1,13 +1,17 @@
 "use client"
 import CodeViewer from '@/components/CodeViewer';
 import VirtualList from '@/components/virtuallist/VirtualList'
+import VirtualListPractice from '@/components/virtuallist/VirtualListPractice';
 import Image from 'next/image';
 import React from 'react'
 
-const data=Array.from({length:100000}).map((_,index)=>index);
+const data=Array.from({length:1000}).map((_,index)=>index);
 const page = () => {
   return (
     <div className='flex flex-col gap-8 p-4'>
+        {/* <VirtualListPractice data={data} renderRow={(d)=>{
+            return d;
+        }}/> */}
         <div className='flex flex-col gap-4'>
             <div className='text-2xl font-semibold '>Requirements for Virtual List</div>
             <ul className='text-lg flex gap-2 list-disc flex-col ml-3'>
